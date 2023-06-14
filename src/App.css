@@ -1,38 +1,353 @@
-.App {
+:root {
+  --text-color: grey;
+  --text-white-color: white;
+}
+* {
+  box-sizing: border-box;
+}
+.textColor {
+  color: grey !important;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.font-weight {
+  font-weight: 600;
+}
+.headers {
+  background-color: #20551b;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.logo {
+  color: whitesmoke;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+.nav-link-option ul {
+  list-style: none;
+  gap: 1rem;
+}
+.nav-link-option ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.bannerContainer {
+  height: 60vh;
+  padding: 1rem;
+  background: #389938de;
+  align-items: center;
+}
+.intro {
+  width: 50%;
+  color: whitesmoke;
+}
+.slidesContainer {
+  width: 50%;
+  height: 100%;
+}
+.option button {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  background: #216dde;
+  color: whitesmoke;
+  border: none;
+}
+.option button:hover {
+  background-color: #124797;
+}
+.carousel {
+  height: 100%;
+  width: 100%;
+}
+.carousel-inner {
+  height: 100%;
+  width: 70%;
+}
+.carousel-item {
+  width: 100%;
+  height: 100%;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+.hotOfferContainer {
+  background-color: rgba(165, 161, 161, 0.555);
+  padding: 1rem 0;
+}
+.hotOfferContainer h2 {
+  text-align: center;
+  color: rgb(85, 80, 80);
+}
+.hotContainer {
+  width: 100%;
+  justify-content: space-around;
+}
+.productHot {
+  width: 20%;
+  flex-direction: column;
+  align-items: center;
+  background: whitesmoke;
+  padding-bottom: 0.5rem;
+}
+
+.hotImage {
+  width: 100%;
+  height: 80%;
+}
+.hotImage img {
+  width: 100%;
+  height: 100%;
+}
+.hot-price {
+  font-size: 1.3rem;
+}
+.desc {
+  justify-content: space-around;
+  gap: 1rem;
+}
+.buy-button {
+  width: 80%;
+}
+.buy-button > button {
+  width: 100%;
+}
+.order-option-section {
+  margin-top: 5%;
+  background: whitesmoke;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.order-option-section h2 {
+  color: rgb(85, 80, 80);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.order-option {
+  width: 100%;
+  padding: 2rem 0;
+  justify-content: space-evenly;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.options-to-order {
+  width: 30%;
   flex-direction: column;
   align-items: center;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+.options-to-order i {
+  padding: 2rem;
+  background: rgba(184, 176, 176, 0.712);
+  border-radius: 50%;
+  color: grey;
+}
+.options-to-order .btn {
+  width: 50%;
+  border-radius: 1rem;
+}
+.feedbackContainer {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(53, 51, 51);
+  padding: 2rem 0;
+}
+.feedbackContainer h2 {
+  color: var(--text-white-color);
+}
+.feedbackContainer form {
+  width: 40%;
+}
+.feedbackContainer form > * {
+  margin-top: 1rem;
+}
+.feedbackContainer form > input:nth-child(4) {
+  width: 100%;
+}
+.footer-container {
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.575);
+  padding-top: 2rem;
+}
+.footer-options {
+  width: 50%;
+  padding-right: 1rem;
+}
+.footer-options ul {
+  list-style: none;
+  gap: 1rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.footer-options ul li > a {
+  text-decoration: none;
+  color: var(--text-white-color);
+}
+.footer-options ul li > a:hover {
+  text-decoration: underline;
 }
 
-.App-link {
-  color: #61dafb;
+/* product page */
+.height-full {
+  height: 100%;
+}
+.drinks-container {
+  width: 100%;
+  height: 70vh;
+}
+.drink {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px rgba(160, 157, 157, 0.445);
+  padding-bottom: 1rem;
+}
+.drink-image {
+  width: 80%;
+  height: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.drink-image img {
+  width: 100%;
+  height: 100%;
+}
+.drink-desc {
+  justify-content: space-around;
+}
+.option-to-buy {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.option-to-buy > button {
+  width: 50%;
+  text-align: center;
+}
+/* about style  */
+.market-banner {
+  width: 100%;
+  height: 60vh;
+  background-image: url("https://img.choice.com.au/-/media/eacdb29bc2c84cf59831b6e9e054691c.ashx?w=660&jq=80%20660w");
+  /* no-repeat center center; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.banner-text {
+  width: 20%;
+  height: 50%;
+  background-color: rgba(172, 164, 164, 0.747);
+  position: absolute;
+  left: 8rem;
+  top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+.vision-parent {
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.vision-container {
+  width: 80%;
+  height: 50vh;
+}
+.vision-container .vision {
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: var(--text-white-color);
+  background: rgb(59, 58, 58);
+}
+.vision-container .image {
+  width: 40%;
+  height: 100%;
+}
+.vision-container .image img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 690px) {
+  .intro {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .option {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  .option > button {
+    width: 100%;
+    padding: 1.3rem 1rem;
+  }
+  .bannerContainer {
+    flex-direction: column-reverse;
+  }
+  .hotContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .productHot {
+    width: 80%;
+  }
+  .order-option {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .options-to-order {
+    width: 80%;
+  }
+  .options-to-order .btn {
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1rem 0;
+  }
+  .feedbackContainer form {
+    width: 60%;
+  }
+  .banner-text {
+    left: 25%;
+    width: 50%;
+    backdrop-filter: blur(15px);
+  }
+  .vision-container {
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+  .vision-container .vision {
+    width: 100%;
+  }
+  .vision-container .image {
+    width: 100%;
+  }
+  .vision-parent {
+    margin-top: 7rem;
   }
 }
