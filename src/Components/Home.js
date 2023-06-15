@@ -1,6 +1,8 @@
 import { HotOffer } from "./HotOffer";
 import { Layout } from "./Layout";
 import React from "react";
+import { OrderOption } from "./OrderOption";
+import { Contact } from "./Contact";
 
 export const Home = () => {
   return (
@@ -19,6 +21,8 @@ export const Home = () => {
         </div>
       </section>
       <HotOffer />
+      <OrderOption />
+      <Contact />
     </Layout>
   );
 };

@@ -2,18 +2,18 @@ import "bootstrap/js/dist/dropdown";
 
 export const Header = () => {
   return (
-    <div class="headers flex">
-      <div class="logo">
+    <div className="headers flex">
+      <div className="logo">
         <h2>BLIBLI</h2>
       </div>
-      <div class="nav-link-option">
-        <ul class="flex">
+      <div className="nav-link-option">
+        <ul className="flex">
           <li>
-            <a href="./index.html">Home</a>
+            <a href="/">Home</a>
           </li>
-          <li class="nav-item dropdown">
+          <li className="nav-item dropdown">
             <a
-              class="nav-link dropdown-toggle"
+              className="nav-link dropdown-toggle"
               href="#"
               role="button"
               data-bs-toggle="dropdown"
@@ -21,14 +21,14 @@ export const Header = () => {
             >
               products
             </a>
-            <ul class="dropdown-menu">
+            <ul className="dropdown-menu">
               <li>
-                <a class="dropdown-item textColor" href="./product.html">
+                <a className="dropdown-item textColor" href="/drink">
                   Drinks
                 </a>
               </li>
               <li>
-                <a class="dropdown-item textColor" href="#">
+                <a className="dropdown-item textColor" href="#">
                   Snacks
                 </a>
               </li>

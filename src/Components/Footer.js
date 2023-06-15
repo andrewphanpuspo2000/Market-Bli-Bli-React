@@ -1,21 +1,21 @@
 export const Footer = () => {
   return (
     <footer>
-      <div class="footer-container flex">
-        <div class="footer-options">
-          <ul class="flex">
+      <div className="footer-container flex">
+        <div className="footer-options">
+          <ul className="flex">
             <li>
-              <a href="#" class="font-weight">
+              <a href="#" className="font-weight">
                 Product
               </a>
             </li>
             <li>
-              <a href="#" class="font-weight">
+              <a href="#" className="font-weight">
                 Offer
               </a>
             </li>
             <li>
-              <a href="#" class="font-weight">
+              <a href="#" className="font-weight">
                 About
               </a>
             </li>

@@ -1,17 +1,17 @@
 export const Product = ({ image, name, price }) => {
   return (
-    <div class="productHot flex shadow">
-      <div class="hotImage">
+    <div className="productHot flex shadow">
+      <div className="hotImage">
         <img src={image} alt="" />
       </div>
-      <div class="desc flex">
-        <p class="font-weight">{name}</p>
-        <span class="hot-price">
-          <i class="fa-solid fa-dollar-sign"></i> {price}
+      <div className="desc flex">
+        <p className="font-weight">{name}</p>
+        <span className="hot-price">
+          <i className="fa-solid fa-dollar-sign"></i> {price}
         </span>
       </div>
-      <div class="buy-button">
-        <button class="btn btn-success">Buy</button>
+      <div className="buy-button">
+        <button className="btn btn-success">Buy</button>
       </div>
     </div>
   );

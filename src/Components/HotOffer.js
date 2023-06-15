@@ -27,12 +27,17 @@ export const HotOffer = () => {
     },
   ];
   return (
-    <section class="hotoffer">
-      <div class="hotOfferContainer">
+    <section className="hotoffer">
+      <div className="hotOfferContainer">
         <h2>Hot Products</h2>
-        <div class="hotContainer flex">
+        <div className="hotContainer flex">
           {hotOffer.map((item, i) => (
-            <Product image={item.image} name={item.name} price={item.price} />
+            <Product
+              key={i}
+              image={item.image}
+              name={item.name}
+              price={item.price}
+            />
           ))}
         </div>
       </div>
