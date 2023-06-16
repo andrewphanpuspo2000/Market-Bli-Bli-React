@@ -1,7 +1,9 @@
+import { Button, Col } from "react-bootstrap";
+
 export const DrinkItem = ({ itemName, image, price, cart, buy }) => {
   return (
-    <div className="col-md-3 height-full mt-4">
-      <div className="drink height-full shadow flex">
+    <Col md={3} className="mt-4">
+      <div className="drink shadow flex">
         <div className="drink-image">
           <img src={image} alt="" />
         </div>
@@ -13,10 +15,10 @@ export const DrinkItem = ({ itemName, image, price, cart, buy }) => {
           </span>
         </div>
         <div className="option-to-buy flex">
-          <button className="btn btn-success">{cart}</button>
-          <button className="btn btn-success">{buy}</button>
+          <Button className="btn btn-success">{cart}</Button>
+          <Button className="btn btn-success">{buy}</Button>
         </div>
       </div>
-    </div>
+    </Col>
   );
 };

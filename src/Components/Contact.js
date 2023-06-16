@@ -1,25 +1,26 @@
+import { Button, Form } from "react-bootstrap";
+
 export const Contact = () => {
   return (
     <section className="contact">
       <div className="feedbackContainer flex">
         <h2>Give Feedback</h2>
-        <form action="">
-          <input type="text" placeholder="Email" className="form-control" />
-          <input
-            type="password"
-            placeholder="Password"
-            className="form-control"
+        <Form action="">
+          <Form.Control type="text" placeholder="Email" />
+          <Form.Control type="password" placeholder="Password" />
+          <Form.Control
+            as="textarea"
+            placeholder="comment"
+            style={{ height: "100px" }}
           />
-          <textarea
-            name="feedback"
-            id="feedback"
-            cols="30"
-            rows="5"
-            className="form-control"
-            placeholder="Message"
-          ></textarea>
-          <input type="button" value="Submit" className="btn btn-primary" />
-        </form>
+          <Button
+            variant="primary"
+            className="feedback-btn 
+"
+          >
+            Submit
+          </Button>
+        </Form>
       </div>
     </section>
   );

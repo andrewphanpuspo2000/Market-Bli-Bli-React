@@ -30,6 +30,7 @@ body {
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 .logo {
   color: whitesmoke;
@@ -55,12 +56,15 @@ body {
   align-items: center;
 }
 .intro {
-  width: 50%;
+  width: 60%;
   color: whitesmoke;
 }
 .slidesContainer {
-  width: 50%;
+  width: 40%;
   height: 100%;
+}
+.option {
+  gap: 1rem;
 }
 .option button {
   padding: 0.5rem 1rem;
@@ -182,6 +186,9 @@ body {
 .feedbackContainer form > input:nth-child(4) {
   width: 100%;
 }
+.feedback-btn {
+  width: 100%;
+}
 .footer-container {
   width: 100%;
   align-items: center;
@@ -298,6 +305,10 @@ body {
   .intro {
     width: 100%;
   }
+  .slidesContainer {
+    width: 70%;
+    height: 45%;
+  }
   .option {
     display: flex;
     gap: 1rem;
@@ -333,7 +344,7 @@ body {
     padding: 1rem 0;
   }
   .feedbackContainer form {
-    width: 60%;
+    width: 80%;
   }
   .banner-text {
     left: 25%;

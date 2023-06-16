@@ -1,3 +1,5 @@
+import { Button } from "react-bootstrap";
+
 export const Product = ({ image, name, price }) => {
   return (
     <div className="productHot flex shadow">
@@ -11,7 +13,7 @@ export const Product = ({ image, name, price }) => {
         </span>
       </div>
       <div className="buy-button">
-        <button className="btn btn-success">Buy</button>
+        <Button className="btn btn-success">Buy</Button>
       </div>
     </div>
   );
