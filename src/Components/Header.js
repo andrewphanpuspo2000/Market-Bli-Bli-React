@@ -28,7 +28,7 @@ export const Header = () => {
                 </a>
               </li>
               <li>
-                <a className="dropdown-item textColor" href="#">
+                <a className="dropdown-item textColor" href="/snacks">
                   Snacks
                 </a>
               </li>
